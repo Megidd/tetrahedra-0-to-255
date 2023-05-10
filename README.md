@@ -13,3 +13,5 @@ I'm trying to adapt the above *marching cubes* source code, and its *tables*, to
 For some reason, I cannot find any publication for extracting a tetrahedral mesh *on* and *inside* the isosurface from a three-dimensional discrete scalar field. Maybe I'm not looking at the right places. Am I missing something? Or do I have to come up with the *tables* myself? It looks like a daunting task to me.
 
 Let's do it...
+
+https://math.stackexchange.com/q/4648068/197913
