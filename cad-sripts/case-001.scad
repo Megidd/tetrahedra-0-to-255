@@ -1,7 +1,12 @@
 // Only the first corner of the cube has zero/negative value.
 
 include <cube.scad>;
-include <tetrahedron.scad>
+include <triangle.scad>;
+include <tetrahedron.scad>;
+
+triangle_table = [0, 8, 3];
+
+draw_triangles(indices = triangle_table, vertices = edges);
 
 tetrahedron_count = 1;
 
