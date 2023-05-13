@@ -3,24 +3,14 @@
 include <cube.scad>;
 include <tetrahedron.scad>
 
-tetrahedron_count = 6;
+tetrahedron_count = 1;
 
 tetrahedron_indices = [
-        [12+0, 12+4, 12+7, 12+6],
-        [12+0, 12+3, 12+7, 12+6],
-        [12+0, 12+4, 12+5, 12+6],
-        [12+0, 12+1, 12+5, 12+6],
-        [12+0, 12+3, 12+2, 12+6],
-        [12+0, 12+1, 12+2, 12+6],
-    ];
+    [12+0, 0, 3, 8],
+];
 
 tetrahedron_colors = [
     [1, 0, 0, 0.5],  // red
-    [0, 1, 0, 0.5],  // green
-    [0, 0, 1, 0.5],  // blue
-    [1, 1, 0, 0.5],  // yellow
-    [1, 0, 1, 0.5],  // magenta
-    [0, 1, 1, 0.5]   // cyan
 ];
 
 create_tetrahedra(
