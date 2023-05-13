@@ -64,7 +64,7 @@ module labeled_and_divided_cube(cube_size, alpha=0.5, colors=[
     center = [cube_size/2, cube_size/2, cube_size/2];
 
     // Label the corners of the cube
-    labeled_cube([0, 0, 0], [cube_size, cube_size, cube_size]);
+    labeled_cube([0, 0, 0], cube_size);
 
     // Divide the cube into tetrahedra
     divide_space_into_tetrahedra(cube_size, alpha, colors);
