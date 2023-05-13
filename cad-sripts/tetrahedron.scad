@@ -1,4 +1,4 @@
-module create_tetrahedra(tetrahedron_count, tetrahedron_indices) {
+module create_tetrahedra(tetrahedron_count, tetrahedron_indices, tetrahedron_colors) {
     for (i = [0:tetrahedron_count-1]) {
         vertex_indices = tetrahedron_indices[i];
 
