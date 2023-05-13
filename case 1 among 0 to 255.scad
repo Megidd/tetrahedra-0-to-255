@@ -1,3 +1,19 @@
+module labeled_cube(corner, size) {
+  translate(corner) {
+    color([1, 1, 1, 0.5]) cube(size); // create a transparent cube with the given size, centered at the given corner coordinates
+
+    // label the corner points
+    translate([0, 0, -5]) rotate([90, 0, 0]) text("C0", size=5);
+    translate([size[0], 0, -5]) rotate([90, 0, 0]) text("C1", size=5);
+    translate([size[0], size[1], -5]) rotate([90, 0, 0]) text("C2", size=5);
+    translate([0, size[1], -5]) rotate([90, 0, 0]) text("C3", size=5);
+    translate([0, 0, size[2]]) rotate([90, 0, 0]) text("C4", size=5);
+    translate([size[0], 0, size[2]]) rotate([90, 0, 0]) text("C5", size=5);
+    translate([size[0], size[1], size[2]]) rotate([90, 0, 0]) text("C6", size=5);
+    translate([0, size[1], size[2]]) rotate([90, 0, 0]) text("C7", size=5);
+  }
+}
+
 module divide_cube_into_tetrahedra(cube_size, alpha=0.5, colors=[
     [1, 0, 0, alpha],  // red
     [0, 1, 0, alpha],  // green
@@ -48,6 +64,24 @@ module divide_cube_into_tetrahedra(cube_size, alpha=0.5, colors=[
     color([1, 1, 1, 0]) cube(cube_size);
 }
 
+module labeled_and_divided_cube(cube_size, alpha=0.5, colors=[
+    [1, 0, 0, alpha],  // red
+    [0, 1, 0, alpha],  // green
+    [0, 0, 1, alpha],  // blue
+    [1, 1, 0, alpha],  // yellow
+    [1, 0, 1, alpha],  // magenta
+    [0, 1, 1, alpha]   // cyan
+]) {
+    // Define the center of the cube
+    center = [cube_size/2, cube_size/2, cube_size/2];
+
+    // Label the corners of the cube
+    labeled_cube([0, 0, 0], [cube_size, cube_size, cube_size]);
+
+    // Divide the cube into tetrahedra
+    divide_cube_into_tetrahedra(cube_size, alpha, colors);
+}
+
 // Example usage of the module
 cube_size = 50;
 alpha = 0.5;
@@ -60,4 +94,4 @@ colors = [
     [0, 1, 1, alpha]   // cyan
 ];
 
-divide_cube_into_tetrahedra(cube_size, alpha, colors);
+labeled_and_divided_cube(cube_size, alpha, colors);
