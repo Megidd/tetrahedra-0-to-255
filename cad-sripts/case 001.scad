@@ -32,17 +32,17 @@ module divide_cube_into_tetrahedra(cube_size, alpha=0.5, colors=[
         [0, cube_size, 0],
         [0, 0, cube_size],
         [cube_size, 0, cube_size],
-        [0, cube_size, cube_size],
         [cube_size, cube_size, cube_size],
+        [0, cube_size, cube_size],
     ];
 
     tetrahedron_indices = [
-        [0, 4, 6, 7],
-        [0, 3, 6, 7],
-        [0, 4, 5, 7],
-        [0, 1, 5, 7],
-        [0, 3, 2, 7],
-        [0, 1, 2, 7],
+        [0, 4, 7, 6],
+        [0, 3, 7, 6],
+        [0, 4, 5, 6],
+        [0, 1, 5, 6],
+        [0, 3, 2, 6],
+        [0, 1, 2, 6],
     ];
 
     // Define the tetrahedra by selecting vertices from the cube
