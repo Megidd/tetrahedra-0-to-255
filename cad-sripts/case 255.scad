@@ -73,7 +73,7 @@ module labeled_and_divided_cube(cube_size, alpha=0.5, colors=[
 }
 
 // Example usage of the module
-cube_size = 50;
+cube_size = 80;
 alpha = 0.5;
 colors = [
     [1, 0, 0, alpha],  // red

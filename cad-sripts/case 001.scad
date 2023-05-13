@@ -2,7 +2,7 @@
 
 include <cube.scad>;
 
-module divide_cube_into_tetrahedra(cube_size, alpha=0.5, colors=[
+module divide_space_into_tetrahedra(cube_size, alpha=0.5, colors=[
     [1, 0, 0, alpha],  // red
     [0, 1, 0, alpha],  // green
     [0, 0, 1, alpha],  // blue
@@ -67,11 +67,11 @@ module labeled_and_divided_cube(cube_size, alpha=0.5, colors=[
     labeled_cube([0, 0, 0], [cube_size, cube_size, cube_size]);
 
     // Divide the cube into tetrahedra
-    divide_cube_into_tetrahedra(cube_size, alpha, colors);
+    divide_space_into_tetrahedra(cube_size, alpha, colors);
 }
 
 // Example usage of the module
-cube_size = 50;
+cube_size = 80;
 alpha = 0.5;
 colors = [
     [1, 0, 0, alpha],  // red

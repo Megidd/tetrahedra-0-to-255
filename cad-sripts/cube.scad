@@ -1,6 +1,32 @@
 module labeled_cube(corner, size) {
+    edges = [
+        [size/2, 0, 0],
+        [size, size/2, 0],
+        [size/2, size, 0],
+        [0, size/2, 0],
+        [size/2, 0, size],
+        [size, size/2, size],
+        [size/2, size, size[2]],
+        [0, size/2, size],
+        [0, 0, size/2],
+        [size, 0, size/2],
+        [size, size, size/2],
+        [0, size, size/2],
+    ];
+
+    corners = [
+        [0, 0, 0],
+        [size, 0, 0],
+        [size, size, 0],
+        [0, size, 0],
+        [0, 0, size],
+        [size, 0, size],
+        [size, size, size],
+        [0, size, size],
+    ];
+
   translate(corner) {
-    color([1, 1, 1, 0.5]) cube(size); // create a transparent cube with the given size, centered at the given corner coordinates
+    color([1, 1, 1, 0.5]) cube(size, center=false); // create a transparent cube with the given size, centered at the given corner coordinates
 
     // label the corner points
     translate([0, 0, -5]) rotate([90, 0, 0]) text("C12", size=5);
