@@ -1,5 +1,6 @@
 // When all 8 corners of the cube have zero or negative values.
 // It means the whole cube is on/inside the 3D model.
+// In this case, 6 tetrahedra are generated for the whole cube.
 
 module labeled_cube(corner, size) {
   translate(corner) {
