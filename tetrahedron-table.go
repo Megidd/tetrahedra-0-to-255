@@ -28,5 +28,12 @@ var mcTetrahedronTable = [256][]int{
 	// 0b11111110
 	{},
 	// 0b11111111 case 255: all cube corners have zero/negative values.
-	{},
+	{
+		12, 16, 19, 18,
+		12, 15, 19, 18,
+		12, 16, 17, 18,
+		12, 13, 17, 18,
+		12, 15, 14, 18,
+		12, 13, 14, 18,
+	},
 }
