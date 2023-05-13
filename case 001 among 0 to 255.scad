@@ -1,3 +1,5 @@
+// Only the first corner of the cube has zero/negative value.
+
 module labeled_cube(corner, size) {
   translate(corner) {
     color([1, 1, 1, 0.5]) cube(size); // create a transparent cube with the given size, centered at the given corner coordinates
