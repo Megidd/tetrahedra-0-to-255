@@ -60,9 +60,6 @@ module labeled_and_divided_cube(cube_size, alpha=0.5, colors=[
     [1, 0, 1, alpha],  // magenta
     [0, 1, 1, alpha]   // cyan
 ]) {
-    // Define the center of the cube
-    center = [cube_size/2, cube_size/2, cube_size/2];
-
     // Label the corners of the cube
     labeled_cube([0, 0, 0], cube_size);
 
