@@ -14,4 +14,4 @@ For some reason, I cannot find any publication for extracting a tetrahedral mesh
 
 Let's do it...
 
-https://math.stackexchange.com/q/4648068/197913
+https://github.com/deadsy/sdfx/pull/68#issuecomment-1447714965
