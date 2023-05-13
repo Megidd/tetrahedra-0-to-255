@@ -31,7 +31,7 @@ edges_and_corners = concat(edges, corners);
 module labeled_cube() {
   translate([0, 0, 0]) {
     // create a transparent cube with the given size, centered at the given corner coordinates
-    color([1, 1, 1, 0.5]) cube(size, center=false);
+    color([1, 1, 1, 0.2]) cube(size, center=false);
 
     // label the edges
     // We are adjusting the labels by custom offsets and rotations.

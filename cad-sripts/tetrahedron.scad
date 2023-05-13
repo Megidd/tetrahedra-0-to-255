@@ -2,6 +2,8 @@ module create_tetrahedra(tetrahedron_count, tetrahedron_indices, tetrahedron_col
     for (i = [0:tetrahedron_count-1]) {
         vertex_indices = tetrahedron_indices[i];
 
+        echo("**RESULT tetrahedron ", i, " indices: ", vertex_indices);
+
         tetrahedron_vertices = [
             edges_and_corners[vertex_indices[0]],
             edges_and_corners[vertex_indices[1]],
