@@ -17,12 +17,12 @@ tetrahedron_indices = [
     ];
 
 tetrahedron_colors = [
-    [1, 0, 0, alpha],  // red
-    [0, 1, 0, alpha],  // green
-    [0, 0, 1, alpha],  // blue
-    [1, 1, 0, alpha],  // yellow
-    [1, 0, 1, alpha],  // magenta
-    [0, 1, 1, alpha]   // cyan
+    [1, 0, 0, 0.5],  // red
+    [0, 1, 0, 0.5],  // green
+    [0, 0, 1, 0.5],  // blue
+    [1, 1, 0, 0.5],  // yellow
+    [1, 0, 1, 0.5],  // magenta
+    [0, 1, 1, 0.5]   // cyan
 ];
 
 create_tetrahedra(
