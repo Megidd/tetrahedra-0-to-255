@@ -17,3 +17,21 @@ For some reason, I cannot find any publication for extracting a tetrahedral mesh
 https://github.com/deadsy/sdfx/pull/68#issuecomment-1447714965
 
 Let's do it...
+
+# Example
+
+## Case 0
+
+Case 0 is trivial. No cube corner has zero/negative value. No tetrahedron is generated.
+
+## Case 1
+
+Case 1 result is below. A cube corner has zero/negative value.
+
+![Screenshot_20230513_190216](https://github.com/Megidd/tetrahedron-table/assets/17475482/94b2acbf-4784-4c36-8e6e-35f8126ed004)
+
+## Case 255
+
+Case 255 result is below. All cube corners have zero/negative values.
+
+![Screenshot_20230513_190339](https://github.com/Megidd/tetrahedron-table/assets/17475482/343201fa-76a4-4b83-bfbc-fb6323ac352a)
