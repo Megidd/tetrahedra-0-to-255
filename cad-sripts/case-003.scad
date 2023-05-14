@@ -11,13 +11,27 @@ draw_triangles(indices = triangle_table, vertices = edges, triangle_color=[0, 1,
 
 // Generate tetrahedra by playing around with these:
 
-tetrahedron_count = 1;
+tetrahedron_count = 8;
 
 tetrahedron_indices = [
     [1, 15, 3, 19],
+    [1, 14, 15, 19],
+    [1, 14, 19, 18],
+    [1, 18, 19, 17],
+    [1, 3, 9, 17],
+    [17, 19, 3, 16],
+    [9, 3, 8, 17],
+    [8, 17, 3, 16],
 ];
 
 tetrahedron_colors = [
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
+    [1, 0, 0, 0.5],  // red
     [1, 0, 0, 0.5],  // red
 ];
 
