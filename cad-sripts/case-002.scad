@@ -1,5 +1,3 @@
-// Only the first corner of the cube has zero/negative value.
-
 include <cube.scad>;
 include <triangle.scad>;
 include <tetrahedron.scad>;
