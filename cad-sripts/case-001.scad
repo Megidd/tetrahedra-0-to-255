@@ -24,4 +24,4 @@ create_tetrahedra(tetrahedron_count,tetrahedron_indices,tetrahedron_colors);
 // Just to be able to visualize the created tetrahedra with respect to the cube.
 // Draw cube last.
 // https://stackoverflow.com/a/76245980/3405291
-labeled_cube();
+color([1, 1, 1, 0.2]) cube(size, center=false);

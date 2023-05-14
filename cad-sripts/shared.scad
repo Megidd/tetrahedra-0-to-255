@@ -28,12 +28,7 @@ corners = [
 
 edges_and_corners = concat(edges, corners);
 
-module labeled_cube() {
-  translate([0, 0, 0]) {
-    // create a transparent cube with the given size, centered at the given corner coordinates
-    color([1, 1, 1, 0.2]) cube(size, center=false);
-
-    // label the edges
+// label the edges
     // We are adjusting the labels by custom offsets and rotations.
     translate(edges[0]+[0, 0, -5]) rotate([90, 0, 0]) text("E0", size=5);
     translate(edges[1]+[0, -3, -5]) rotate([90, 0, 90]) text("E1", size=5);
@@ -58,8 +53,6 @@ module labeled_cube() {
     translate(corners[5]) rotate([90, 0, 0]) text("C17", size=5);
     translate(corners[6]) rotate([90, 0, 180]) text("C18", size=5);
     translate(corners[7]) rotate([90, 0, 180]) text("C19", size=5);
-  }
-}
 
 module draw_triangles(indices, vertices, triangle_color=[1, 1, 1, 0.4]) {
   assert(len(indices) % 3 == 0, "indices must have a length that is a multiple of 3");
