@@ -1,6 +1,4 @@
-include <cube.scad>;
-include <triangle.scad>;
-include <tetrahedron.scad>;
+include <shared.scad>;
 
 // Triangles come from here:
 // https://github.com/deadsy/sdfx/blob/1a71e404e4b2aa00c59f53cffc219a9e83e62d85/render/march3.go#L360
