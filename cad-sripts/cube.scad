@@ -52,11 +52,11 @@ module labeled_cube() {
     // We are adjusting the labels by custom offsets and rotations.
     translate(corners[0]+[0, 0, -5]) rotate([90, 0, 0]) text("C12", size=5);
     translate(corners[1]+[0, 0, -5]) rotate([90, 0, 0]) text("C13", size=5);
-    translate(corners[2]+[0, 0, -5]) rotate([90, 0, 0]) text("C14", size=5);
-    translate(corners[3]+[0, 0, -5]) rotate([90, 0, 0]) text("C15", size=5);
+    translate(corners[2]+[0, 0, -5]) rotate([90, 0, 180]) text("C14", size=5);
+    translate(corners[3]+[0, 0, -5]) rotate([90, 0, 180]) text("C15", size=5);
     translate(corners[4]) rotate([90, 0, 0]) text("C16", size=5);
     translate(corners[5]) rotate([90, 0, 0]) text("C17", size=5);
-    translate(corners[6]) rotate([90, 0, 0]) text("C18", size=5);
-    translate(corners[7]) rotate([90, 0, 0]) text("C19", size=5);
+    translate(corners[6]) rotate([90, 0, 180]) text("C18", size=5);
+    translate(corners[7]) rotate([90, 0, 180]) text("C19", size=5);
   }
 }
