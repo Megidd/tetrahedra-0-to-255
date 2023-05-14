@@ -54,15 +54,18 @@ translate(corners[5]) rotate([ 90, 0, 0 ]) text("C17", size = 5);
 translate(corners[6]) rotate([ 90, 0, 180 ]) text("C18", size = 5);
 translate(corners[7]) rotate([ 90, 0, 180 ]) text("C19", size = 5);
 
-module draw_triangles(indices, vertices, triangle_color = [ 1, 1, 1, 0.4 ])
+module draw_triangles(triangle_table)
 {
-    for (i = [0:len(indices) - 1])
+    for (i = [0:len(triangle_table) - 1])
     {
-        p1 = vertices[indices[i][0]];
-        p2 = vertices[indices[i][1]];
-        p3 = vertices[indices[i][2]];
-        color(triangle_color) polyhedron(points = [ p1, p2, p3 ], faces = [[ 0, 1, 2 ]]);
-        echo("Draw triangle: ", indices[i][0], indices[i][1], indices[i][2]);
+        indices = triangle_table[i];
+
+        p0 = edges[indices[0]];
+        p1 = edges[indices[1]];
+        p2 = edges[indices[2]];
+
+        color([ 1, 1, 1, 0.4 ]) polyhedron(points = [ p0, p1, p2 ], faces = [[ 0, 1, 2 ]]);
+        echo("Draw triangle: ", indices[0], indices[1], indices[2]);
     }
 }
 
@@ -74,12 +77,12 @@ module create_tetrahedra(tetrahedron_table)
 
         echo("**RESULT tetrahedron ", i, " indices: ", indices);
 
-        points = [
-            edges_and_corners[indices[0]], edges_and_corners[indices[1]], edges_and_corners[indices[2]],
-            edges_and_corners[indices[3]]
-        ];
+        p0 = edges_and_corners[indices[0]];
+        p1 = edges_and_corners[indices[1]];
+        p2 = edges_and_corners[indices[2]];
+        p3 = edges_and_corners[indices[3]];
 
         color([ 1, 0, 0, 0.5 ])
-            polyhedron(points = points, faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
+            polyhedron(points = [ p0, p1, p2, p3 ], faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
     }
 }
