@@ -14,7 +14,7 @@ draw_triangles(indices = triangle_table, vertices = edges, triangle_color=[1, 1,
 tetrahedron_count = 1;
 
 tetrahedron_indices = [
-    [12+0, 0, 3, 8],
+    [13, 1, 0, 9],
 ];
 
 tetrahedron_colors = [
