@@ -1,7 +1,7 @@
 module draw_triangles(indices, vertices, triangle_color=[1, 1, 1, 0.4]) {
   assert(len(indices) % 3 == 0, "indices must have a length that is a multiple of 3");
 
-  for (i = [0:len(indices)-1:3]) {
+  for (i = [0:len(indices)-3:3]) {
     triangle(
       vertices[indices[i]],
       vertices[indices[i+1]],
