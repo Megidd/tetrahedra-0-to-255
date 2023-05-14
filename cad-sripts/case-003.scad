@@ -5,10 +5,6 @@ include <shared.scad>;
 triangle_table = [ 1, 8, 3, 9, 8, 1 ];
 draw_triangles(indices = triangle_table, vertices = edges, triangle_color = [ 0, 1, 1, .4 ]);
 
-// Generate tetrahedra by playing around with these:
-
-tetrahedron_count = 8;
-
 tetrahedron_indices = [
     [ 1, 15, 3, 19 ],
     [ 1, 14, 15, 19 ],
@@ -20,18 +16,7 @@ tetrahedron_indices = [
     [ 8, 17, 3, 16 ],
 ];
 
-tetrahedron_colors = [
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-    [ 1, 0, 0, 0.5 ], // red
-];
-
-create_tetrahedra(tetrahedron_count, tetrahedron_indices, tetrahedron_colors);
+create_tetrahedra(tetrahedron_indices);
 
 // Just to be able to visualize the created tetrahedra with respect to the cube.
 // Draw cube last.

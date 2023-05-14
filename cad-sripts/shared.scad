@@ -68,20 +68,20 @@ module draw_triangles(indices, vertices, triangle_color = [ 1, 1, 1, 0.4 ])
     }
 }
 
-module create_tetrahedra(tetrahedron_count, tetrahedron_indices, tetrahedron_colors)
+module create_tetrahedra(tetrahedron_indices)
 {
-    for (i = [0:tetrahedron_count - 1])
+    for (i = [0:len(tetrahedron_indices) - 1])
     {
-        vertex_indices = tetrahedron_indices[i];
+        indices = tetrahedron_indices[i];
 
-        echo("**RESULT tetrahedron ", i, " indices: ", vertex_indices);
+        echo("**RESULT tetrahedron ", i, " indices: ", indices);
 
-        tetrahedron_vertices = [
-            edges_and_corners[vertex_indices[0]], edges_and_corners[vertex_indices[1]],
-            edges_and_corners[vertex_indices[2]], edges_and_corners[vertex_indices[3]]
+        points = [
+            edges_and_corners[indices[0]], edges_and_corners[indices[1]],
+            edges_and_corners[indices[2]], edges_and_corners[indices[3]]
         ];
 
-        color(tetrahedron_colors[i])
-            polyhedron(points = tetrahedron_vertices, faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
+        color([1, 0, 0, 0.5])
+            polyhedron(points = points, faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
     }
 }
