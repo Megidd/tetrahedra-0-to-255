@@ -66,11 +66,11 @@ module draw_triangles(indices, vertices, triangle_color = [ 1, 1, 1, 0.4 ])
     }
 }
 
-module create_tetrahedra(tetrahedron_indices)
+module create_tetrahedra(tetrahedron_table)
 {
-    for (i = [0:len(tetrahedron_indices) - 1])
+    for (i = [0:len(tetrahedron_table) - 1])
     {
-        indices = tetrahedron_indices[i];
+        indices = tetrahedron_table[i];
 
         echo("**RESULT tetrahedron ", i, " indices: ", indices);
 

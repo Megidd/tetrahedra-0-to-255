@@ -11,11 +11,11 @@ draw_triangles(indices = triangle_table, vertices = edges, triangle_color = [ 1,
 
 // Generate tetrahedra by playing around with these:
 
-tetrahedron_indices = [
+tetrahedron_table = [
     [ 12 + 0, 0, 3, 8 ],
 ];
 
-create_tetrahedra(tetrahedron_indices);
+create_tetrahedra(tetrahedron_table);
 
 // Just to be able to visualize the created tetrahedra with respect to the cube.
 // Draw cube last.
