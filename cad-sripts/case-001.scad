@@ -4,9 +4,6 @@ include <cube.scad>;
 include <triangle.scad>;
 include <tetrahedron.scad>;
 
-// Just to be able to visualize the created tetrahedra with respect to the cube.
-labeled_cube();
-
 // Triangles come from here:
 // https://github.com/deadsy/sdfx/blob/1a71e404e4b2aa00c59f53cffc219a9e83e62d85/render/march3.go#L360
 triangle_table = [0, 8, 3];
@@ -30,3 +27,5 @@ create_tetrahedra(
     tetrahedron_colors = tetrahedron_colors
 );
 
+// Just to be able to visualize the created tetrahedra with respect to the cube.
+labeled_cube();

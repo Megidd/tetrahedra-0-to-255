@@ -5,9 +5,6 @@
 include <cube.scad>;
 include <tetrahedron.scad>
 
-// Just to be able to visualize the created tetrahedra with respect to the cube.
-labeled_cube();
-
 // Generate tetrahedra by playing around with these:
 
 tetrahedron_count = 6;
@@ -35,3 +32,6 @@ create_tetrahedra(
     tetrahedron_indices = tetrahedron_indices,
     tetrahedron_colors = tetrahedron_colors
 );
+
+// Just to be able to visualize the created tetrahedra with respect to the cube.
+labeled_cube();
