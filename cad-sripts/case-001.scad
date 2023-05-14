@@ -28,4 +28,6 @@ create_tetrahedra(
 );
 
 // Just to be able to visualize the created tetrahedra with respect to the cube.
+// Draw cube last.
+// https://stackoverflow.com/a/76245980/3405291
 labeled_cube();
