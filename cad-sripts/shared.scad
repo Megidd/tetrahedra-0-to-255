@@ -79,10 +79,6 @@ module create_tetrahedra(tetrahedron_count, tetrahedron_indices, tetrahedron_col
             edges_and_corners[vertex_indices[3]]
         ];
 
-        tetrahedron(tetrahedron_vertices, tetrahedron_colors[i]);
+        color(tetrahedron_colors[i]) polyhedron(points=tetrahedron_vertices, faces=[[0, 1, 2], [0, 2, 3], [0, 3, 1], [1, 2, 3]]);
     }
-}
-
-module tetrahedron(tetrahedron_vertices, tetrahedron_color) {
-    color(tetrahedron_color) polyhedron(points=tetrahedron_vertices, faces=[[0, 1, 2], [0, 2, 3], [0, 3, 1], [1, 2, 3]]);
 }
