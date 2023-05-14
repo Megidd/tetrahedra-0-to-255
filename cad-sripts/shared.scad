@@ -69,7 +69,7 @@ module draw_triangles(triangle_table)
     }
 }
 
-module create_tetrahedra(tetrahedron_table)
+module draw_tetrahedra(tetrahedron_table)
 {
     for (i = [0:len(tetrahedron_table) - 1])
     {

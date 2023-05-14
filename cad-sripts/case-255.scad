@@ -13,6 +13,6 @@ tetrahedron_table = [
     [ 12 + 0, 12 + 1, 12 + 2, 12 + 6 ],
 ];
 
-create_tetrahedra(tetrahedron_table);
+draw_tetrahedra(tetrahedron_table);
 
 color([ 1, 1, 1, 0.2 ]) cube(size, center = false);

@@ -18,6 +18,6 @@ tetrahedron_table = [
     [ 8, 17, 3, 16 ],
 ];
 
-create_tetrahedra(tetrahedron_table);
+draw_tetrahedra(tetrahedron_table);
 
 color([ 1, 1, 1, 0.2 ]) cube(size, center = false);
