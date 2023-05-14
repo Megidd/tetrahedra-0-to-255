@@ -62,7 +62,7 @@ module draw_triangles(indices, vertices, triangle_color=[1, 1, 1, 0.4]) {
     p2 = vertices[indices[i*3+1]];
     p3 = vertices[indices[i*3+2]];
     color(triangle_color) polyhedron(points=[p1, p2, p3], faces=[[0, 1, 2]]);
-    echo("Draw triangle: ", indices[i], indices[i+1], indices[i+2]);
+    echo("Draw triangle: ", indices[i*3], indices[i*3+1], indices[i*3+2]);
   }
 }
 
