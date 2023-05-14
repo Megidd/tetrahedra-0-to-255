@@ -21,11 +21,7 @@ tetrahedron_colors = [
     [1, 0, 0, 0.5],  // red
 ];
 
-create_tetrahedra(
-    tetrahedron_count = tetrahedron_count,
-    tetrahedron_indices = tetrahedron_indices,
-    tetrahedron_colors = tetrahedron_colors
-);
+create_tetrahedra(tetrahedron_count,tetrahedron_indices,tetrahedron_colors);
 
 // Just to be able to visualize the created tetrahedra with respect to the cube.
 // Draw cube last.
