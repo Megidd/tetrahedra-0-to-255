@@ -65,7 +65,8 @@ module draw_triangles(triangle_table)
         p2 = edges[indices[2]];
 
         color([ 1, 1, 1, 0.4 ]) polyhedron(points = [ p0, p1, p2 ], faces = [[ 0, 1, 2 ]]);
-        echo("Draw triangle: ", indices[0], indices[1], indices[2]);
+
+        echo("Draw triangle ", i, "indices: ", indices);
     }
 }
 
@@ -75,8 +76,6 @@ module draw_tetrahedra(tetrahedron_table)
     {
         indices = tetrahedron_table[i];
 
-        echo("**RESULT tetrahedron ", i, " indices: ", indices);
-
         p0 = edges_and_corners[indices[0]];
         p1 = edges_and_corners[indices[1]];
         p2 = edges_and_corners[indices[2]];
@@ -84,5 +83,7 @@ module draw_tetrahedra(tetrahedron_table)
 
         color([ 1, 0, 0, 0.5 ])
             polyhedron(points = [ p0, p1, p2, p3 ], faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
+
+        echo("Draw tetrahedron ", i, " indices: ", indices);
     }
 }
