@@ -8,6 +8,7 @@ module draw_triangles(indices, vertices, triangle_color=[1, 1, 1, 0.4]) {
       vertices[indices[i+2]],
       triangle_color
     );
+    echo("Draw triangle: ", indices[i], indices[i+1], indices[i+2]);
   }
 }
 
