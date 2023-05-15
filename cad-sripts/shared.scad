@@ -38,10 +38,10 @@ translate(edges[4] + [ 0, 0, 2 ]) rotate([ 90, 0, 0 ]) text("E4", size = 5);
 translate(edges[5] + [ 0, -3, 2 ]) rotate([ 90, 0, 90 ]) text("E5", size = 5);
 translate(edges[6] + [ 5, 0, 2 ]) rotate([ 90, 0, 180 ]) text("E6", size = 5);
 translate(edges[7] + [ 0, 3, 2 ]) rotate([ 90, 0, -90 ]) text("E7", size = 5);
-translate(edges[8] + [ -1, 0, 0 ]) rotate([ 0, -90, 90 ]) text("E8", size = 5);
-translate(edges[9] + [ 5, 0, 0 ]) rotate([ 90, -90, 0 ]) text("E9", size = 5);
-translate(edges[10] + [ 1, 0, 0 ]) rotate([ 180, -90, 90 ]) text("E10", size = 5);
-translate(edges[11] + [ -1, 0, 0 ]) rotate([ 0, -90, 0 ]) text("E11", size = 5);
+translate(edges[8] + [ -10, 0, 0 ]) rotate([ 90, 0, 0 ]) text("E8", size = 5);
+translate(edges[9] + [ 1, 0, 0 ]) rotate([ 90, 0, 0 ]) text("E9", size = 5);
+translate(edges[10] + [ 14, 0, 0 ]) rotate([ 90, 0, 180 ]) text("E10", size = 5);
+translate(edges[11] + [ -2, 0, 0 ]) rotate([ 90, 0, 180 ]) text("E11", size = 5);
 
 // label the corner points
 // We are adjusting the labels by custom offsets and rotations.
