@@ -12,7 +12,7 @@ var mcTetrahedronTable = [256][]int{
 	{},
 	// 0b00000001 case 1: first cube corner has zero/negative value.
 	{12, 0, 3, 8},
-	// 0b00000010
+	// 0b00000010 case 2
 	{13, 1, 0, 9},
 	// 0b00000011 case 3
 	{
