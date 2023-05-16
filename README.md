@@ -18,6 +18,12 @@ https://github.com/deadsy/sdfx/pull/68#issuecomment-1447714965
 
 Let's do it...
 
+# Node numbering
+
+The node numbering follows the convention of CalculiX solver [documentation](http://www.dhondt.de/ccx_2.20.pdf). Like this:
+
+![Screenshot_20230516_150126](https://github.com/Megidd/tetrahedron-table/assets/17475482/77ad0e34-3908-4c17-a8f6-ad0b7e31453b)
+
 # Example
 
 ## Case 0
