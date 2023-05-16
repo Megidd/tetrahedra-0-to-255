@@ -34,24 +34,24 @@ Case 0 is trivial. No cube corner has zero/negative value. No tetrahedron is gen
 
 Case 1 result is below. A cube corner has zero/negative value.
 
-![Screenshot_20230516_140235](https://github.com/Megidd/tetrahedron-table/assets/17475482/f6c9a066-64d8-4487-ac46-ea8bb22fceee)
+![Screenshot_20230516_150554](https://github.com/Megidd/tetrahedron-table/assets/17475482/e7541386-1d5f-48d5-ab0a-aabc7d133143)
 
 ## Case 2
 
-![Screenshot_20230516_140256](https://github.com/Megidd/tetrahedron-table/assets/17475482/421181e7-177a-4ce3-822a-f8f0dc98e637)
+![Screenshot_20230516_150614](https://github.com/Megidd/tetrahedron-table/assets/17475482/11ca2f44-6330-471c-867e-e049027cc012)
 
 ## Case 3
 
-![Screenshot_20230516_140318](https://github.com/Megidd/tetrahedron-table/assets/17475482/61b5bb12-403b-4e99-826e-af3ef25a7296)
+![Screenshot_20230516_150636](https://github.com/Megidd/tetrahedron-table/assets/17475482/d4fe71a4-91d5-458d-b224-086af1a55d64)
 
 ## Case 4
 
-![Screenshot_20230516_140344](https://github.com/Megidd/tetrahedron-table/assets/17475482/f4fb8af1-221b-414d-9f74-ca69d7d094a2)
+![Screenshot_20230516_150713](https://github.com/Megidd/tetrahedron-table/assets/17475482/58b949c4-a094-49fb-b2ca-6e40a9173aac)
 
 ## Case 5
 
-![Screenshot_20230516_140617](https://github.com/Megidd/tetrahedron-table/assets/17475482/dd93b90d-0459-474f-980a-1dea795e8e17)
+![Screenshot_20230516_150731](https://github.com/Megidd/tetrahedron-table/assets/17475482/70fabcf7-eafc-4783-a149-d414746951cb)
 
 ## Case 6
 
-![Screenshot_20230516_140843](https://github.com/Megidd/tetrahedron-table/assets/17475482/16985767-1e85-4e66-adf3-05b14938234a)
+![Screenshot_20230516_150759](https://github.com/Megidd/tetrahedron-table/assets/17475482/e21f6dc9-4a13-4c0a-9322-04729c1ef352)
