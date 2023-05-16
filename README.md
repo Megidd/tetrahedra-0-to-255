@@ -28,7 +28,23 @@ Case 0 is trivial. No cube corner has zero/negative value. No tetrahedron is gen
 
 Case 1 result is below. A cube corner has zero/negative value.
 
-![Screenshot_20230513_190216](https://github.com/Megidd/tetrahedron-table/assets/17475482/94b2acbf-4784-4c36-8e6e-35f8126ed004)
+![Screenshot_20230516_140235](https://github.com/Megidd/tetrahedron-table/assets/17475482/f6c9a066-64d8-4487-ac46-ea8bb22fceee)
+
+## Case 2
+
+![Screenshot_20230516_140256](https://github.com/Megidd/tetrahedron-table/assets/17475482/421181e7-177a-4ce3-822a-f8f0dc98e637)
+
+## Case 3
+
+![Screenshot_20230516_140318](https://github.com/Megidd/tetrahedron-table/assets/17475482/61b5bb12-403b-4e99-826e-af3ef25a7296)
+
+## Case 4
+
+![Screenshot_20230516_140344](https://github.com/Megidd/tetrahedron-table/assets/17475482/f4fb8af1-221b-414d-9f74-ca69d7d094a2)
+
+## Case 5
+
+![Screenshot_20230516_140617](https://github.com/Megidd/tetrahedron-table/assets/17475482/dd93b90d-0459-474f-980a-1dea795e8e17)
 
 ## Case 255
 
