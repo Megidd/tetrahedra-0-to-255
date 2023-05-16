@@ -5,9 +5,9 @@ triangle_table = [ [ 0, 5, 4 ], [ 1, 5, 0 ] ];
 draw_triangles(triangle_table);
 
 tetrahedron_table = [
-    [0, 13, 1, 5],
-    [0, 13, 5, 4],
-    [4, 13, 5, 17],
+    [ 0, 13, 1, 5 ],
+    [ 0, 13, 5, 4 ],
+    [ 4, 13, 5, 17 ],
 ];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
