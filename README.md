@@ -46,8 +46,6 @@ Case 1 result is below. A cube corner has zero/negative value.
 
 ![Screenshot_20230516_140617](https://github.com/Megidd/tetrahedron-table/assets/17475482/dd93b90d-0459-474f-980a-1dea795e8e17)
 
-## Case 255
+## Case 6
 
-Case 255 result is below. All cube corners have zero/negative values.
-
-![Screenshot_20230513_190339](https://github.com/Megidd/tetrahedron-table/assets/17475482/343201fa-76a4-4b83-bfbc-fb6323ac352a)
+![Screenshot_20230516_140843](https://github.com/Megidd/tetrahedron-table/assets/17475482/16985767-1e85-4e66-adf3-05b14938234a)
