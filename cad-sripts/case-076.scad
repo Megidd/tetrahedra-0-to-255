@@ -5,12 +5,12 @@ triangle_table = [ [ 6, 3, 11 ], [ 6, 5, 3 ], [ 5, 1, 3 ] ];
 draw_triangles(triangle_table);
 
 tetrahedron_table = [
-    [14, 15, 3, 11],
-    [1, 14, 3, 11],
-    [1, 11, 3, 5],
-    [1, 14, 11, 5],
-    [5, 14, 11, 6],
-    [5, 14, 6, 18],
+    [ 14, 15, 3, 11 ],
+    [ 1, 14, 3, 11 ],
+    [ 1, 11, 3, 5 ],
+    [ 1, 14, 11, 5 ],
+    [ 5, 14, 11, 6 ],
+    [ 5, 14, 6, 18 ],
 ];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
