@@ -5,8 +5,8 @@ triangle_table = [ [ 5, 10, 6 ], [ 4, 7, 8 ] ];
 draw_triangles(triangle_table);
 
 tetrahedron_table = [
-    [8, 4, 7, 16],
-    [10, 6, 5, 18],
+    [ 8, 4, 7, 16 ],
+    [ 10, 6, 5, 18 ],
 ];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
