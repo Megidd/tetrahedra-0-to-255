@@ -1,4 +1,6 @@
-// specify the edges used to create the triangle(s)
+// Specify the edges used to create the triangle(s).
+// Source:
+// https://github.com/deadsy/sdfx/blob/1a71e404e4b2aa00c59f53cffc219a9e83e62d85/render/march3.go#L360
 mcTriangleTable = [
 	// 0b00000000 case 0
 	[],
