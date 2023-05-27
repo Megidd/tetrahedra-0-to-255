@@ -1,6 +1,6 @@
 include <shared.scad>;
 
-triangle_table = [];
+triangle_table = [[]];
 
 draw_triangles(triangle_table);
 
