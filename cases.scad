@@ -9,16 +9,7 @@ triangle_table = mcTriangleTable[i];
 
 draw_triangles(triangle_table);
 
-tetrahedron_table = [
-    [ 0, 3, 8, 16 ],
-    [ 13, 3, 0, 16 ],
-    [ 13, 15, 3, 16 ],
-    [ 13, 14, 15, 16 ],
-    [ 13, 14, 16, 17 ],
-    [ 14, 15, 16, 19 ],
-    [ 14, 16, 17, 18 ],
-    [ 14, 19, 16, 18 ],
-];
+tetrahedron_table = mcTetrahedronTable[i];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
 
