@@ -15,6 +15,8 @@ points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
 
 union()
 {
+    // No case will ever have more than this number of tetrahedra.
+    // So, we are on the safe side.
     polyhedron(points = points[0], faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
     polyhedron(points = points[1], faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
     polyhedron(points = points[2], faces = [ [ 0, 1, 2 ], [ 0, 2, 3 ], [ 0, 3, 1 ], [ 1, 2, 3 ] ]);
