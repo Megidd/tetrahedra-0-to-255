@@ -65,8 +65,6 @@ module draw_triangles(triangle_table)
         p2 = edges[indices[2]];
 
         color([ 1, 1, 1, 0.4 ]) polyhedron(points = [ p0, p1, p2 ], faces = [[ 0, 1, 2 ]]);
-
-        echo("Draw triangle ", i, "indices: ", indices);
     }
 }
 
