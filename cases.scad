@@ -19,6 +19,7 @@ for (j = [0:1:len(points) - 1])
     det = determinant(jac);
     if (det <= 0)
     {
+        echo("*** Case with wrong points order.");
         echo("*** Case:", i);
         echo("*** Tetrahedron:", j, " Points: ", points[j]);
         echo("*** Jacobian matrix:\n", jac);
