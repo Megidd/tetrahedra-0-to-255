@@ -58,7 +58,7 @@ module draw_triangles(triangle_table)
 {
     for (i = [0:3:len(triangle_table) - 1])
     {
-        indices = [triangle_table[i], triangle_table[i+1], triangle_table[i+2]];
+        indices = [ triangle_table[i], triangle_table[i + 1], triangle_table[i + 2] ];
 
         p0 = edges[indices[0]];
         p1 = edges[indices[1]];
@@ -72,5 +72,5 @@ module draw_triangles(triangle_table)
 
 function tetrahedra_points(tetrahedron_table) =
     [for (i = [0:4:len(tetrahedron_table) -
-                 1])[edges_and_corners[tetrahedron_table[i+0]], edges_and_corners[tetrahedron_table[i+1]],
-                     edges_and_corners[tetrahedron_table[i+2]], edges_and_corners[tetrahedron_table[i+3]]]];
+                   1])[edges_and_corners[tetrahedron_table[i + 0]], edges_and_corners[tetrahedron_table[i + 1]],
+                       edges_and_corners[tetrahedron_table[i + 2]], edges_and_corners[tetrahedron_table[i + 3]]]];

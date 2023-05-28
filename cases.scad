@@ -1,6 +1,6 @@
 include <shared.scad>;
-include <triangle-table.scad>
 include <tetrahedron-table.scad>
+include <triangle-table.scad>
 
 // Case number can be from 0 to 255.
 i = 254;
