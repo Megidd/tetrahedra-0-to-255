@@ -3,7 +3,10 @@ include <tetrahedron-table.scad>
 include <triangle-table.scad>
 
 // Case number can be from 0 to 255.
-i = 254;
+//i = 254;
+
+for (i = [0:1:255])
+{
 
 triangle_table = mcTriangleTable[i];
 
@@ -12,9 +15,6 @@ draw_triangles(triangle_table);
 tetrahedron_table = mcTetrahedronTable[i];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
-
-// Import the matrixutils library
-use <matrixutils/matrix.scad>;
 
 for (j = [0:1:len(points) - 1])
 {
@@ -52,3 +52,5 @@ union()
 }
 
 color([ 1, 1, 1, 0.2 ]) cube(size, center = false);
+
+}
