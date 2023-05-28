@@ -80,7 +80,8 @@ function determinant(matrix) = matrix[0][0] * matrix[1][1] * matrix[2][2] + matr
                                matrix[0][1] * matrix[1][0] * matrix[2][2] - matrix[0][0] * matrix[1][2] * matrix[2][1];
 
 // To calculate the Jacobian matrix of tetrahedon by its points.
+// https://stackoverflow.com/a/65829475/3405291
 function jacobian(points) =
-    [[points [2] [0] - points [0] [0], points [1] [0] - points [0] [0], points [3] [0] - points [0] [0]],
-     [points [2] [1] - points [0] [1], points [1] [1] - points [0] [1], points [3] [1] - points [0] [1]],
-     [points [2] [2] - points [0] [2], points [1] [2] - points [0] [2], points [3] [2] - points [0] [2]]];
+    [[points [1] [0] - points [0] [0], points [2] [0] - points [0] [0], points [3] [0] - points [0] [0]],
+     [points [1] [1] - points [0] [1], points [2] [1] - points [0] [1], points [3] [1] - points [0] [1]],
+     [points [1] [2] - points [0] [2], points [2] [2] - points [0] [2], points [3] [2] - points [0] [2]]];
