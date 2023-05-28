@@ -3,10 +3,7 @@ include <tetrahedron-table.scad>
 include <triangle-table.scad>
 
 // Case number can be from 0 to 255.
-//i = 254;
-
-for (i = [0:1:255])
-{
+i = 254;
 
 triangle_table = mcTriangleTable[i];
 
@@ -53,5 +50,3 @@ union()
 }
 
 color([ 1, 1, 1, 0.2 ]) cube(size, center = false);
-
-}
