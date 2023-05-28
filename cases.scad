@@ -22,7 +22,8 @@ for (j = [0:1:len(points) - 1])
     det = determinant(jac);
     if (det <= 0)
     {
-        echo("*** Points of ", j, "are ", points[j]);
+        echo("*** Case:", i);
+        echo("*** Tetrahedron:", j, " Points: ", points[j]);
         echo("*** Jacobian matrix:\n", jac);
         echo("*** Determinant of Jacobian matrix:", det);
     }
