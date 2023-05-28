@@ -13,6 +13,21 @@ tetrahedron_table = mcTetrahedronTable[i];
 
 points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
 
+// Import the matrixutils library
+use <matrixutils/matrix.scad>;
+
+for (i = [0:1:len(points) - 1])
+{
+    jac = jacobian(points[i]);
+    det = determinant(jac);
+    if (det <= 0)
+    {
+        echo("points of ", i, "are ", points[i]);
+        echo("Jacobian matrix:\n", j);
+        echo("Determinant of Jacobian matrix:", det);
+    }
+}
+
 union()
 {
     // No case will ever have more than this number of tetrahedra.

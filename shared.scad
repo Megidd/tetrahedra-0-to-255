@@ -74,3 +74,9 @@ function tetrahedra_points(tetrahedron_table) =
     [for (i = [0:4:len(tetrahedron_table) -
                    1])[edges_and_corners[tetrahedron_table[i + 0]], edges_and_corners[tetrahedron_table[i + 1]],
                        edges_and_corners[tetrahedron_table[i + 2]], edges_and_corners[tetrahedron_table[i + 3]]]];
+
+// To calculate the Jacobian matrix of tetrahedon by its points.
+function jacobian(points) =
+    [[points [2] [0] - points [0] [0], points [1] [0] - points [0] [0], points [3] [0] - points [0] [0]],
+     [points [2] [1] - points [0] [1], points [1] [1] - points [0] [1], points [3] [1] - points [0] [1]],
+     [points [2] [2] - points [0] [2], points [1] [2] - points [0] [2], points [3] [2] - points [0] [2]]];
