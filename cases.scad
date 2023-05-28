@@ -16,15 +16,15 @@ points = tetrahedra_points(tetrahedron_table = tetrahedron_table);
 // Import the matrixutils library
 use <matrixutils/matrix.scad>;
 
-for (i = [0:1:len(points) - 1])
+for (j = [0:1:len(points) - 1])
 {
-    jac = jacobian(points[i]);
+    jac = jacobian(points[j]);
     det = determinant(jac);
     if (det <= 0)
     {
-        echo("points of ", i, "are ", points[i]);
-        echo("Jacobian matrix:\n", j);
-        echo("Determinant of Jacobian matrix:", det);
+        echo("*** Points of ", j, "are ", points[j]);
+        echo("*** Jacobian matrix:\n", jac);
+        echo("*** Determinant of Jacobian matrix:", det);
     }
 }
 
