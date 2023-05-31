@@ -14,6 +14,19 @@ for (i = [0:255])
 
     tetrahedron_table = mcTetrahedronTable[i];
 
+    for (l = [0:len(triangle_table) - 1])
+    {
+        matches = find_matches(triangle_table[l], tetrahedron_table);
+        found = len(matches) > 0;
+        if (!found)
+        {
+            echo("*** Case with un-used edge with a triangle on that edge.");
+            echo("*** Case:", i, "edge:", triangle_table[l]);
+            echo("*** trianggle table", triangle_table);
+            echo("*** tetrahedron table", tetrahedron_table);
+        }
+    }
+
     for (k = [0:len(tetrahedron_table) - 1])
     {
 
