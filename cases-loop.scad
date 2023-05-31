@@ -14,16 +14,16 @@ for (i = [0:1:10])
 
     tetrahedron_table = mcTetrahedronTable[i];
 
-    for (k = [0:1:len(tetrahedron_table) - 1])
+    for (k = [0:1:len(triangle_table) - 1])
     {
-        for (l = [0:1:len(triangle_table) - 1])
+        for (l = [0:1:len(tetrahedron_table) - 1])
         {
-            if (tetrahedron_table[k] != triangle_table[l])
+            if (tetrahedron_table[l] != triangle_table[k])
             {
-                if (tetrahedron_table[k] < 12) // Below 12 means an edge.
+                if (tetrahedron_table[l] < 12) // Below 12 means an edge.
                 {
                     echo("*** Case with wrong edge.");
-                    echo("*** Case:", i, "edge:", tetrahedron_table[k]);
+                    echo("*** Case:", i, "tethedron:", k, "edge:", tetrahedron_table[l]);
                 }
             }
         }
