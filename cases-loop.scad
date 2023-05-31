@@ -21,7 +21,10 @@ for (i = [0:255])
 
         found = len(matches) > 0;
 
-        if (!found && tetrahedron_table[k] < 12) // Below 12 means an edge.
+        // Any cube corner can be used for tetrahedron creation.
+        // But no cube edge can be used for tetrahedron creation, unless that edge has a triangle on it.
+        // Below 12 means an edge.
+        if (!found && tetrahedron_table[k] < 12)
         {
             echo("*** Case with wrong edge.");
             echo("*** Case:", i, "tethedron:", k, "edge:", tetrahedron_table[k]);
