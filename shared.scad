@@ -84,5 +84,7 @@ function jacobian(points) =
      [points [1] [1] - points [0] [1], points [2] [1] - points [0] [1], points [3] [1] - points [0] [1]],
      [points [1] [2] - points [0] [2], points [2] [2] - points [0] [2], points [3] [2] - points [0] [2]]];
 
+function find_matches(item, array) = [for (i = [0:len(array) - 1]) if (item == array[i]) true];
+
 // Concatenating two vectors.
 function cat(L1, L2) = [for (i = [0:len(L1) + len(L2) - 1]) i < len(L1) ? L1[i] : L2[i - len(L1)]];

@@ -5,7 +5,7 @@ include <triangle-table.scad>
 // Case number can be from 0 to 255.
 // i = 254;
 
-for (i = [0:1:10])
+for (i = [0:255])
 {
 
     triangle_table = mcTriangleTable[i];
@@ -14,18 +14,19 @@ for (i = [0:1:10])
 
     tetrahedron_table = mcTetrahedronTable[i];
 
-    for (k = [0:1:len(triangle_table) - 1])
+    for (k = [0:len(tetrahedron_table) - 1])
     {
-        for (l = [0:1:len(tetrahedron_table) - 1])
+
+        matches = find_matches(tetrahedron_table[k], triangle_table);
+
+        found = len(matches) > 0;
+
+        if (!found && tetrahedron_table[k] < 12) // Below 12 means an edge.
         {
-            if (tetrahedron_table[l] != triangle_table[k])
-            {
-                if (tetrahedron_table[l] < 12) // Below 12 means an edge.
-                {
-                    echo("*** Case with wrong edge.");
-                    echo("*** Case:", i, "tethedron:", k, "edge:", tetrahedron_table[l]);
-                }
-            }
+            echo("*** Case with wrong edge.");
+            echo("*** Case:", i, "tethedron:", k, "edge:", tetrahedron_table[k]);
+            echo("*** trianggle table", triangle_table);
+            echo("*** tetrahedron table", tetrahedron_table);
         }
     }
 
