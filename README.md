@@ -1,3 +1,9 @@
+# Publication
+
+A journal paper is being prepared based on this repository and that PR: https://github.com/deadsy/sdfx/pull/68
+
+Its DOI will be available when ready.
+
 # Input & output
 
 Input is triangle table. Output is tetrahedron table. The output is filled out manually by going over all the cases from `0` to `255`.
