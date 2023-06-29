@@ -1,6 +1,7 @@
 size = 80;
 
 need_labels = true;
+need_spheres = true;
 
 edges = [
     [ size / 2, 0, 0 ],
@@ -70,6 +71,22 @@ module draw_triangles(triangle_table)
         p2 = edges[indices[2]];
 
         color([ 1, 1, 1, 0.4 ]) polyhedron(points = [ p0, p1, p2 ], faces = [[ 0, 1, 2 ]]);
+
+        if (need_spheres)
+        {
+            draw_spheres(points = [ p0, p1, p2 ]);
+        }
+    }
+}
+
+module draw_spheres(points)
+{
+    for (i = [0:1:len(points) - 1])
+    {
+        translate(points[i])
+        {
+            sphere(d = size / 10);
+        }
     }
 }
 
