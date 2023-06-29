@@ -2,6 +2,7 @@ size = 80;
 
 need_labels = true;
 need_spheres = true;
+need_tetrahedron_drawing = true;
 
 edges = [
     [ size / 2, 0, 0 ],
