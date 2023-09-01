@@ -1,3 +1,5 @@
+// A package importable by Go code.
+// The final table is provided.
 package gotable
 
 // Specify the edges & corners used to create the tetrahedra.
