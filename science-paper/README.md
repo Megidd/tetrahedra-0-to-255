@@ -21,6 +21,10 @@ A novel approach to generate finite elements is presented. The approach takes in
 
 # Result
 
+## 15 first cases
+
 ![15 first cases](./15firstcases.svg "15 first cases")
+
+## 15 last cases
 
 ![15 last cases](15lastcases.svg "15 last cases")
