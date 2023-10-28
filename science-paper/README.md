@@ -1,5 +1,5 @@
 ---
-title: 'Generate finite elements by marching cubes algorithm'
+title: 'Generate finite elements by marching cubes'
 date: '2023-10-28'
 anonymous: "false"
 author: 
